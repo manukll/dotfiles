@@ -6,3 +6,4 @@ defaultBranch = master
 [alias]
 ss = status -s
 undo = reset HEAD~
+setup = branch --set-upstream-to=origin/master master
