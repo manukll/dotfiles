@@ -1,0 +1,49 @@
+import os
+import re
+from xkeysnail.transform import *
+
+define_keymap(re.compile("Google-chrome"), {
+	
+	# prev/next tab
+    K("LM-h"): K("C-Shift-TAB"),
+    K("LM-l"): K("C-TAB"),
+
+	# scroll up/down
+    K("LM-k"): [K("Up"), K("Up"), K("Up"), K("Up"), K("Up")],
+    K("LM-j"): [K("Down"), K("Down"), K("down"), K("Down"), K("Down")],
+
+	# close/reopen closed tab
+	K("LM-d"): K("C-w"),
+	K("LM-u"): K("C-Shift-t"),
+
+	# new tab
+	K("LM-Enter"): K("C-t"),
+
+	# move tab left/right
+	K("LM-comma"): K("C-Shift-Page_up"),
+	K("LM-dot"): K("C-Shift-Page_down"),
+
+})
+
+define_keymap(re.compile("Firefox"), {
+
+	# prev/next tab
+    K("LM-h"): K("C-Page_up"),
+    K("LM-l"): K("C-Page_down"),
+
+	# scroll up/down
+    K("LM-k"): [K("Up"), K("Up"), K("Up"), K("Up"), K("Up")],
+    K("LM-j"): [K("Down"), K("Down"), K("down"), K("Down"), K("Down")],
+
+	# close/reopen closed tab
+	K("LM-d"): K("C-w"),
+	K("LM-u"): K("C-Shift-t"),
+
+	# new tab
+	K("LM-Enter"): K("C-t"),
+
+	# move tab left/right
+	K("LM-comma"): K("C-Shift-Page_up"),
+	K("LM-dot"): K("C-Shift-Page_down"),
+
+})

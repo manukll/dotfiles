@@ -1,0 +1,8 @@
+[user]
+name = Manuel Koell
+email = manu.koell@mailbox.org
+[init]
+defaultBranch = master
+[alias]
+ss = status -s
+undo = reset HEAD~
