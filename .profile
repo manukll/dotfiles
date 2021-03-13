@@ -26,6 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+export LEDGER_FILE="$HOME/Documents/easybank.journal"
 export NPM_PACKAGES="$HOME/.npm-packages"
 export NNN_COLORS=6527
 export NNN_TRASH=1
